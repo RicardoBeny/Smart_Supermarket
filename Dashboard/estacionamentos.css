@@ -1,0 +1,100 @@
+.cardsMainPage .card{ 
+    box-shadow: 0 0 30px -2px rgb(0, 0, 0) !important;
+    width: 450px; 
+    height: 750px; 
+    margin-top: 1%;
+}
+
+.card-top-entrada{ /* personalização de cada cartão */
+    position: relative;
+    background-image: url("parqueEstacionamento/entrada.png");
+    background-size: cover;
+    height: 570px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    text-align: center;
+}
+
+.card-top-saida{ /* personalização de cada cartão */
+    position: relative;
+    background-image: url("parqueEstacionamento/saida.png");
+    background-size: cover;
+    height: 570px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    text-align: center;
+}
+
+.card-top-estado{ /* personalização de cada cartão */
+    position: relative;
+    background-image: url("parqueEstacionamento/estado.png");
+    background-size: cover;
+    height: 570px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    text-align: center;
+}
+
+.heading{  /* TEXTO PRINCIAPL IDENTFICICAÇÃO CARD */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 20px #000000;
+}
+
+.park{ /* customização valor */
+    margin-top: 30%;
+}
+
+.park-value{ /* customização valor */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 30px #000000;
+}
+
+.card-body{ /* customização body do cartao */
+    padding: 0 30px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.card-body .card-text{ /* customização do texto do cartão */
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.card-body .card{ /* CUSTOMIZAÇÃO DO COMUM DOS CARTÕES parte de baixo da atualização */
+    position: relative;
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 60%; 
+    height: 45px;
+    background-color: #64b462;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0) !important;
+    transition: 0.6s;
+}
+ 
+.card-body .card:active{ /* efeito para dar impressao que se clica no botão */
+    box-shadow: inset 0 0 4px rgb(0, 0, 0) !important;
+    transition: 0.6s;
+}
+
+.historicoText{ /* customização texto historico */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}

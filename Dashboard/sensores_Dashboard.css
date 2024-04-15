@@ -1,0 +1,277 @@
+
+.btn{
+  background-color: #252525;
+  box-shadow: 0 0 30px -2px rgb(0, 0, 0) !important;
+  height: 139px;
+  width: 350px;
+  transition: 0.4s;
+}
+
+.btn:focus { /* remover a sombra azul no click, overriding */
+  outline: none;
+  box-shadow: none;
+}
+
+#temp::after{ /* personalização do texto que aparece no hover do butão */
+  content: "Temperatura";
+  position: relative;
+  font-weight: bold;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+  top: -62%;
+  opacity: 0%;
+  transition: 0.6s;
+}
+
+#temp:hover{
+  background-color: #4e7477 ;
+  transition: 0.4s;
+}
+
+#temp:hover::after{ /* aparece o texto do content no hover */
+  opacity: 100%;
+  transition: 0.2s;
+}
+
+#segurança::after{  /* personalização do texto que aparece no hover do butão */
+  content: "Segurança";
+  position: relative;
+  font-weight: bold;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+  top: -62%;
+  opacity: 0%;
+  transition: 0.6s;
+}
+
+#segurança:hover{
+  background-color: #594779 ;
+  transition: 0.4s;
+}
+
+#segurança:hover::after{ /* aparece o texto do content no hover */
+  opacity: 100%;
+  transition: 0.4s;
+}
+
+#stock::after{  /* personalização do texto que aparece no hover do butão */
+  content: "Stock da Loja";
+  position: relative;
+  font-weight: bold;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+  top: -62%;
+  opacity: 0%;
+  transition: 0.6s;
+}
+
+#stock:hover{
+  background-color: #814a26 ;
+  transition: 0.4s;
+}
+
+#stock:hover::after{
+  opacity: 100%;
+  transition: 0.4s;
+}
+
+#camera::after{  /* personalização do texto que aparece no hover do butão */
+  content: "Câmara";
+  position: relative;
+  font-weight: bold;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+  top: -62%;
+  opacity: 0%;
+  transition: 0.6s;
+}
+
+#camera:hover{
+  background-color: #742936 ;
+  transition: 0.4s;
+}
+
+#camera:hover::after{ /* aparece o texto do content no hover */
+  opacity: 100%;
+  transition: 0.2s;
+}
+
+#park::after{  /* personalização do texto que aparece no hover do butão */
+  content: "Estado Estacionamento";
+  position: relative;
+  font-weight: bold;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+  top: -74%;
+  opacity: 0%;
+  transition: 0.6s;
+}
+
+#park:hover{
+  background-color: #5d8f5c ;
+  transition: 0.4s;
+}
+
+#park:hover::after{ /* aparece o texto do content no hover */
+  opacity: 100%;
+  transition: 0.4s;
+}
+
+#moeda::after{  /* personalização do texto que aparece no hover do butão */
+  content: "Estado Caixas";
+  position: relative;
+  font-weight: bold;
+  font-size: x-large;
+  text-transform: uppercase;
+  color: white;
+  top: -62%;
+  opacity: 0%;
+  transition: 0.6s;
+}
+
+#moeda:hover{
+  background-color: #7c7131 ;
+  transition: 0.4s;
+}
+
+#moeda:hover::after{ /* aparece o texto do content no hover */
+  opacity: 100%;
+  transition: 0.4s;
+}
+
+/* personalização da tabela dos sensores */
+
+.tituloTable {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 30px -2px rgb(0, 0, 0);
+  height: 50px;
+  width: 320px;
+  background-color: #252525;
+  margin-top: 80px;
+  border: #ffffff;
+  border-radius: 20px;
+}
+
+.tituloTable span{
+  position: relative;
+  margin-left: 32px;
+  font-weight: bold;
+  font-size: x-large;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.sensorStatus{
+  position: relative;
+  margin-top: 60px;
+}
+
+.bdr {
+  box-shadow: 0 0 30px -2px rgb(0, 0, 0);
+  border: 6px solid #252525;
+  border-bottom: 0px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #252525
+}
+
+.table thead tr th{
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.table tbody tr{
+  background-color: #252525;
+  transition: 0.4s;
+}
+
+.table tbody tr:hover{
+  background-color: #ba97fb70;
+  transition: 0.4s;
+}
+
+.table tbody tr td{
+  letter-spacing: 0.5px;
+  font-weight: lighter;
+  color: white;
+}
+
+/* personalização do butao de desconto para os clientes*/
+
+#desconto{
+  text-decoration: none;
+}
+
+.tituloTableDisc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 30px -2px rgb(0, 0, 0);
+  height: 100px;
+  width: 320px;
+  background-image: radial-gradient(circle, rgba(177,175,3,1) 0%, rgba(252,70,107,1) 100%);
+  margin-top: 60px;
+  border: #ffffff;
+  border-radius: 60px;
+  transition: 0.6s;
+}
+
+.tituloTableDisc .desconto{
+  position: relative;
+  margin-left: 24%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1.5px;
+  transition: 0.5s;
+}
+
+.codigo{
+  position: relative;
+  top: -50%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1.5px;
+  transition: 0.5s;
+}
+
+.tituloTableDisc::after{ 
+  content: "CLIQUE";
+  position: relative;
+  margin-top: 42%;
+  margin-left: -46%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1px;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.tituloTableDisc:hover{
+  opacity: 60%;
+  transition: 0.6s;
+}
+
+.tituloTableDisc:hover::after{ /* aparece o content após hover*/
+  transition: 0.5s;
+  margin-top: 12%;
+  opacity: 100%;
+
+}
+
+.tituloTableDisc:hover .desconto{
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+

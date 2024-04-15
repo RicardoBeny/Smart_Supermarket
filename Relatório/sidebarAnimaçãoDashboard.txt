@@ -1,0 +1,30 @@
+ /* identifica quando o rato dá hover a uma das opções do sidebar ("Dashboard" etc) e cria uma class temporária no item <li class="hovered"> */
+
+        /* usado para manter a cor quando p.e dashboard e selecionada */
+        let list = document.querySelectorAll('.navigation li');
+
+        function activelink() {
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activelink));
+
+        /* FORMATO DE USO DA CLASS EM CSS
+    
+          .navigation ul li:hover,
+          .navigation ul li.hovered
+    
+        */
+
+/* toggle do butao para abrir o sidemenu */
+
+let toggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+let controlPage = document.querySelector('.controlPage');
+
+toggle.onclick = function () { /* função para a main page acompanhar quando o side menu encolhe ou abre */
+    navigation.classList.toggle('active');
+    controlPage.classList.toggle('active');
+}

@@ -1,0 +1,69 @@
+.relogio{ /* perosnalização do banner do relógio */
+    width: 70%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #5c66f2 0%, rgba(22,138,166,1) 49%, rgba(92,102,242,1) 100%);    
+    border-radius: 20px;
+}  
+
+.datetime{ /* personalização caixa do relogio  */
+    color: #fff;
+    background: #5c66f271;
+    width: 380px;
+    padding: 15px 10px;
+    border: 3px solid #b6c8f0b2;
+    border-radius: 5px;
+    -webkit-box-reflect: below 0.5px linear-gradient(transparent, rgba(255, 255, 255, 0.04)); /* reflexção que aparece em baixo */
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px){ /* mediante o tamanho do ecra da valores diferentes */
+    .datetime{
+        height: inherit; 
+    }
+}
+  
+@media screen and (max-width: 1536px){
+    .datetime{
+        height: inherit; 
+    }
+}
+
+.datetime:hover{
+    background: #d5d4d43d;
+    box-shadow: 0 0 30px #ffffff71;
+}
+
+.date{ /* css data */
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.time{ /* css tempo */
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){ /* css tempo menos AM/PM */
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time span:last-child{ /* css AM/PM */
+    background: #b6c8f050;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 5px;
+    border-radius: 3px;
+}

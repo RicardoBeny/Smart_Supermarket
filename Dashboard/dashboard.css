@@ -1,0 +1,62 @@
+.card-fumo{ /* customização do banner do fumo */
+    width: 70%; 
+    height: 90.18%;
+}
+
+@media screen and (max-width: 1280px){ /* mediante o tamanho do ecra da valores diferentes */
+    .card-fumo{
+        width: 92%;
+        height: 110%;
+        background-size: 100% !important;
+    }
+}
+  
+@media screen and (max-width: 1536px){
+    .card-fumo{
+        width: 92%; 
+        height: 100%;
+    }
+}
+
+
+.card-title{ /* customização do titulo do banner */
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 22px;
+  color: #fff;/*rgba(170, 170, 170, 0.712);*/
+  text-shadow: 0 0 20px #000000;
+}
+.card-subTitle1{ /* customização do sub-titulo do banner */
+    position: relative; 
+    bottom: 10%; 
+    right:21.8%;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 22px;
+    color: #fff;/*rgba(170, 170, 170, 0.712);*/
+    text-shadow: 0 0 20px #000000;
+}
+
+.card-subTitle2{ /* customização da mensagem de erro que aparece quando fumo passa de um valor */
+    font-size: 4rem; 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 22px;
+    color: rgb(245, 13, 13);/*rgba(170, 170, 170, 0.712);*/
+    text-shadow: 0 0 20px #000000;
+}
+
+.card-text{ /* customização do texto normal do banner  */
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 16px;
+}
+

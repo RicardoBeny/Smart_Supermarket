@@ -1,0 +1,139 @@
+.cardsMainPage .card{ 
+    box-shadow: 0 0 30px -2px rgb(0, 0, 0) !important;
+    width: 28%; 
+    height: 85%; 
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 1280px){
+    .cardsMainPage .card{
+        width: 36%;
+        height: 10%; 
+    }
+}
+  
+@media screen and (max-width: 1536px){
+    .cardsMainPage .card{
+        width: 36%; 
+        height: 100%;
+    }
+}
+
+.card-top-entrada-aberta{ /* personalização de cada card */
+    position: relative;
+    background-image: url("segurançaSensores/portaaberta.png");
+    background-size: cover;
+    height: 72%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    text-align: center;
+}
+
+.card-top-entrada-fechada{ /* personalização de cada card */
+    position: relative;
+    background-image: url("segurançaSensores/portafechada.png");
+    background-size: cover;
+    height: 72%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    text-align: center;
+}
+
+.card-top-saida-aberta{ /* personalização de cada card */
+    position: relative;
+    background-image: url("segurançaSensores/portaaberta.png");
+    background-size: cover;
+    height: 72%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    text-align: center;
+}
+
+.card-top-saida-fechada{ /* personalização de cada card */
+    position: relative;
+    background-image: url("segurançaSensores/portafechada.png");
+    background-size: cover;
+    height: 72%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    text-align: center;
+}
+
+.heading{ /* texto grande em cada card */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 20px #000000;
+}
+
+.status{
+    margin-top: 30%;
+}
+
+.status-value{ 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 30px #000000;
+}
+
+.card-body{ /* zona branca em baixo */
+    height: 30%;
+    padding: 0 30px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.card-body .card-text{ /* texto estado */
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.card-body .card{ /* customização botao */
+    position: relative;
+    margin-top: 6%;
+    margin-left: 20%;
+    width: 60%; 
+    height: 22%;
+    background-color: #ba97fb;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0) !important;
+    transition: 0.6s;
+}
+ 
+.card-body .card:active{ /* efeito para dar impressao que se clica no botão */
+    box-shadow: inset 0 0 4px rgb(0, 0, 0) !important;
+    transition: 0.6s;
+}
+
+.historicoText{ /* texto historico */
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 2%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.secButton{ /* segundo botao abrir e fechar */
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 18%;
+    font-size: 20px;
+    cursor: pointer;
+}

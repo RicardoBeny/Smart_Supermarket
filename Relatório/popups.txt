@@ -1,0 +1,3 @@
+function togglePopup (){ /* quando clicado muda a class para class nome + active para mostrar o popu criado*/
+    document.getElementById("popup-1").classList.toggle("active");
+}

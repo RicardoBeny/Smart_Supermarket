@@ -1,0 +1,6 @@
+/* gerador dos codigos de desconto para os clientes - ainda não adaptado - click unico do botao e tirar o refresh da pagina com o click*/
+        
+function disCode(){
+    var randomNumber = Math.floor(1000 + Math.random() * 9000);
+    alert("\n                           O seu código de desconto é : " + randomNumber); /* da print ao valor do codigo na alertbox do browser */
+}

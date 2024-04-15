@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.primNavbar { /* estilo navbar topo */
+    position: static;
+    top: 0;
+    background-color: #23232e;
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo { /* onde diz logo */
+    margin-top: 8px;
+}
+
+.primNavbar h1 { /* barra top texto LOGO */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.primNavbar ul { /* customização itens barra static do topo contactos ... */
+    list-style: none;
+    display: flex;
+}
+
+.espaçoTopo { /* espaço do itens da barra do topo para o topo da página */
+    color: white;
+    margin-top: 15px;
+}
+
+.primNavbar ul li a { /* customização de cada texto */
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+
+.banner{ /* imagem debaixo da navbar que tem os botões */
+    width: 100%;
+    height: 95.7vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("bgPaginaInicial/open.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar { /* debaixo da navbar static com cor, tem outra transparent que permite o login e aceder ao sidemenu */
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {  /* customização do slide menu */
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.dropdown { /* customização da caixa do login hover */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content { /* dropdown para login */
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    background-color: #23232e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a { /* estilo texto login */
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover { /* mudança estilo com hover */
+    background-color: rgb(236, 234, 234);
+    color: #232323;
+    border-radius: 15px;
+    border: 1px solid #1b1b1b;
+    transition: 0.6s;
+}
+
+.dropdown:hover .dropdown-content { /* customização do texto da caixa que aparece no hover do icon de login, texto "Login" */
+    display: block;
+    right: -27%;
+}
+
+.side-nav { /* estilo do side menu, começa com witdth 0 e apos clicarmos no icon aumenta para a width normal dele */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #15151b;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a { /* estilo texto do side menu */
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover { /* customização texto do open slide menu */
+    color: rgb(153, 150, 150);
+
+}
+
+.side-nav .button-close-side-menu { /* configuração da cruz para fechar o side menu */
+    position: absolute;
+    /*border: 1px solid white;
+    padding: 0 0 0 0;*/
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* butões horario e saiba mais configuração */
+
+.content-buttons{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content-buttons h1{ /* TEXTO MEIO DA PAGINA */
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 12px 16px;
+}
+
+.content-buttons p { /* TEXTO MEIO DA PAGINA */
+    color: white; 
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+.hpbutton{ /* BOTAO MEIO DA PAGINA */
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.btcolor{ /* BOTAO MEIO DA PAGINA */
+    background-color: #2f2f4e;
+    border: none;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.hpbutton:hover .btcolor{ /* BOTAO MEIO DA PAGINA */
+    width: 100%;
+}
+
+.popup .overlay{ /* customização popup */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content { /* customização popup */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #1d1d30;
+    border: #fff solid 4px;
+    border-radius: 10px;
+    width: 70%;
+    height: 70%;
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.popup h1{ /* customização texto do popup */
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.popup span{ /* customização texto do popup */
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.popup .close-btn{ /* customização do botao cruz para fechar popup */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    color: #2f2f4e;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup.active .overlay{ /* customização popup */
+    display: block;
+}
+
+.popup.active .content{ /* customização transição content do popup */
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup .content p{ /* customização content do popup */
+    bottom: 5%;
+}

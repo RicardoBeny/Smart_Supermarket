@@ -1,0 +1,38 @@
+function updateClock(){
+    var now = new Date(); /* data no formato data */
+    var dname = now.getDay(), /* dia */
+        mo = now.getMonth(), /* mes */
+        dnum = now.getDate(), /* mes formato string */
+        yr = now.getFullYear(), /* ano */
+        hou = now.getHours(), /* horas */
+        min = now.getMinutes(), /* minutos */
+        sec = now.getSeconds(), /* segundos */
+        pe = "AM";
+
+        if(hou >= 12){
+            pe = "PM"; /* se maior que 12 PM */
+        }
+        if(hou == 0){
+            hou = 12;
+        }
+        if(hou > 12){
+            hou = hou - 12;
+        }
+
+        Number.prototype.pad = function(digits){
+            for(var n = this.toString(); n.length < digits; n = 0 + n); /* dar dois de tamaho ao numeros, de dia = 6 passa para 06 */
+            return n;
+        }
+
+        var months = ["Janeiro", "Fevereiro", "Março", "Abrul", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]; /* vetor meses */
+        var week = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]; /* vetor dias */
+        var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"]; /* vetor de ids a substituir */
+        var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe]; /* valores a substiruir nos ids */
+        for(var i = 0; i < ids.length; i++)
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i]; /* substituição dos valores pelos ids percorrendo o vetor */
+    }
+
+    function initClock(){ /* ATUALIZAÇÃO DA PÁGINA */
+        updateClock();
+        window.setInterval("updateClock()", 1);
+    }

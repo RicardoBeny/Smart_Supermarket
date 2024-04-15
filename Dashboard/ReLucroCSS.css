@@ -1,0 +1,65 @@
+.grafCanvas{ /* customização canvas do grafico */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.chart{ /* costumização do grafico */
+    bottom:10%;
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+}
+
+.titulo{ /* customização do titulo */
+    position: relative;
+    left: 20.5%;
+    top: 8%;
+}
+
+@media screen and (max-width: 1280px){ /* consoante tamanho ecra posiciona de diferente form */
+    .titulo{
+      left: 14%;
+    }
+  }
+
+@media screen and (max-width: 1536px){
+    .titulo{
+      left: 14%;
+    }
+}
+
+.titulo h1{ /* titulo grafico */
+    color: rgba(81, 237, 248, 0.781);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 4rem;
+    text-shadow:  0 0 20px #000000;
+}
+
+.erro1{ /* mensageme rro */
+    position: relative;
+    top: 30%;
+    left: 20.5%;
+}
+
+@media screen and (max-width: 1280px){ /* consoante tamanho ecra posiciona de diferente forma */
+    .erro1{ 
+      left: 14%;
+    }
+  }
+
+@media screen and (max-width: 1536px){
+    .erro1{
+      left: 14%;
+    }
+}
+
+.erro1 h1{ /* customização do erro */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-shadow:  0 0 10px #000000;
+}

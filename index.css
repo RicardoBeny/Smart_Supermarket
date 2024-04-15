@@ -1,0 +1,119 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{ /* Muda a cor do background */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.center{  /* Coloca a caixa do login no centro da tela e muda o background da caixa*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  padding-bottom: 35px;
+}
+
+.center h1{ /* Modifica o texto Login */
+  opacity: 80%;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(112, 112, 112);
+  margin-bottom: 30px;
+}
+
+.loginText{ /*  */
+  text-transform: uppercase;
+}
+
+.center form{ /* Coloca caixas de texto no centro */
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field{ /* Cria espaço entre as duas caixas de texto da pass e do username */
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.txt_field input{ /* Edita a propria caixa para inserir o texto  */
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label{ /* Muda a posição das frases escritas Dentro das caixas*/
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt_field span::before{ /* Cria a animação de ao clicar na caixa o username e a pass subirem */
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #02afff;
+  transition: .5s;
+}
+/* Edita mais as animações do codigo anterior */
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #02afff;
+}
+/* Edita mais as animações do codigo anterior */
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+/* Altera o botão de login*/
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #02afff;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}/* Animação quando se coloca o rato em cima do botao de login*/
+
+input[type="submit"]:hover{
+  border-color: #00ffbb;
+  transition: .5s;
+}
+
+#error { /* customização da mensagem de erro que aparece quando se erra nas credenciais de login */
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    left: 23%;
+    color: #ec7171;
+}

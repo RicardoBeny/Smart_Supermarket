@@ -1,0 +1,9 @@
+/* script para abrir slide menu */
+/* função para abrir o slide menu */
+    function openSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px'; /* tamanho slide menu */
+    }
+    /* função para fechar o slide menu */
+    function closeSlideMenu() {
+        document.getElementById('side-menu').style.width = '0'; /* tamanho slide menu */
+    }

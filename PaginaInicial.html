@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina-Inicial</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style_inicial.css">
+
+
+</head>
+
+<body>
+    <!-- primeira navbar, position static -->
+    <div class="primNavbar">
+
+        <h1 class="logo" style="cursor:pointer">Logo</h1> <!-- lado esquerdo logo --> 
+
+        <!-- items lado direito -->
+        <ul>
+            <li class="espaçoTopo"><a onclick="togglePopup()" style="cursor:pointer">Contacte-nos !</a></li>
+            <li class="espaçoTopo"><a onclick="togglePopup()"><i class="bi bi-telephone-fill" style="margin-left: 10px;"></i></a></li>
+            <li class="espaçoTopo"><a onclick="togglePopup()"><i class="bi bi-envelope-fill" style="margin-left: 10px;"></i></a></li>
+        </ul>
+
+    </div>
+    <!-- fim primeira navbar, position static -->
+
+    <!-- navbar fixed com menu e login / bg com slidshow -->
+    <div class="banner">
+        <!-- navbar -->
+        <nav class="navbar">
+            <span class="open-slide">
+                <!-- abertura do slide menu -->
+                <a style="cursor: pointer;" class="menu" onclick="openSlideMenu()">
+                    <!-- cursoir pointer para nao voltar ao inicio da pagina quando se clica para abrir o menu -->
+                    <span class="color-menu"><i class="bi bi-list" id="simbolo-menu" style="color: #fff; margin-right: 95px; font-size: 2.5rem;"></i></span>
+                    <!-- boostrap icon menu -->
+                </a>
+            </span>
+
+            <!-- dropdown menu no login com login -->
+            <div class="dropdown">
+                <span><i class="bi bi-box-arrow-in-left fa-lg" style="margin-right: 50px; color: white; font-size: 1.35rem;"></i></span>
+                <!-- boostrap icon para dropdown menu -->
+                <div class=" dropdown-content">
+                    <a href="http://127.0.0.1/Projeto-TI/index.php"><i class="bi bi-person-fill"></i> Login</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- butoes grandes inicio pagina -->
+        <div class="content-buttons">
+
+            <h1>SAIBA SEMPRE QUANDO ESTAMOS ABERTOS</h1>
+            <p>Inscreva-se já no nosso website!</p>
+
+            <div>
+                <button onclick="togglePopup()" type="button" class="hpbutton"> <span class="btcolor"></span> HORÁRIO</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="popup" id="popup-1"> <!-- POPUP QUE APARECE QUANDO SE CLICA NO HORARIO CONTACTOS ... -->
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Horário</h1>
+            <span>2ª a 6ª - 08h00 a 18h00<br><br>Telefone: +351911111111<br>Email: example@gmail.com<br><br></span>
+            <!-- MAPA QUE APARECE COMO A SUPOSTA LOCALIZAÇÃO -->
+            <p id="mapa" style="height:auto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.2318152641487!2d-8.825527968183794!3d39.734443339055645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22735a4e067afb%3A0xcfaf619f4450fa76!2sPolit%C3%A9cnico%20de%20Leiria%20%7C%20ESTG%20-%20Escola%20Superior%20de%20Tecnologia%20e%20Gest%C3%A3o_Edif%C3%ADcio%20D!5e0!3m2!1spt-PT!2spt!4v1653820562491!5m2!1spt-PT!2spt" 
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe></p>
+        </div>
+    </div>
+
+    <!-- configuração do slide menu -->
+    <div id="side-menu" class="side-nav">
+        <a style="cursor: pointer" class="button-close-side-menu" onclick="closeSlideMenu()">&times;</a>
+        <!-- cursoir pointer para nao voltar ao inicio da pagina quando se clica para fechar o menu -->
+        <a href="#" class="side-menu-text">Home</a>
+        <a onclick="togglePopup()" class="side-menu-text">Localização</a>
+    </div>
+    
+    <script>/* script para abrir slide menu */
+            /* função para abrir o slide menu */
+            function openSlideMenu() {
+                document.getElementById('side-menu').style.width = '250px'; /* tamanho slide menu */
+            }
+            /* função para fechar o slide menu */
+            function closeSlideMenu() {
+                document.getElementById('side-menu').style.width = '0'; /* tamanho slide menu */
+            }
+    </script>
+
+    <script>
+        function togglePopup (){
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

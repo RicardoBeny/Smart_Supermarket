@@ -1,0 +1,99 @@
+.tituloTable { /* titulo tabela */
+    position: relative;
+    box-shadow: 0 0 30px -2px rgb(0, 0, 0);
+    height: 100px;
+    width: 320px;
+    background-color: #252525;
+    margin-top: 80px;
+    border: 3px solid #ffffff !important;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.tituloTable .historicoText{ /* texto titulo tabela */
+    position: relative;
+    bottom: 0;
+    color: #252525;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 0%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.tituloTable .bi{ /* icon titulo tabela livro */
+    position: relative;
+    color: white;
+    font-size: 4rem;
+    transition: 1s;
+}
+
+.tituloTable:hover{ /* efeitos hover titulo tabela */
+    transition: 1s;
+    background-color: #ffffff;
+}
+
+.tituloTable:hover .bi{ /* efeitos icon titulo tabela */
+    margin-left: 80%;
+    opacity: 0%;
+    transition: 1s;
+}
+
+.tituloTable:hover .historicoText{ /* texto historico que aparece no hover */
+    transition: 1s;
+    bottom: 75%;
+    opacity: 100%;
+}
+
+.historico{ /* tabela */
+    position: relative;
+    margin-left: 13%;
+    width: calc(100% - 400px);
+    position: relative;
+    margin-top: 60px;
+  }
+
+.bdr { /* tabela */
+    box-shadow: 0 0 30px -2px rgb(0, 0, 0);
+    border: 6px solid #252525;
+    border-bottom: 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #252525;
+}
+
+.table thead tr th{ /* tabela titulo de cada coluna em cima*/
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+  
+.table tbody tr{ /* tabela cada row */
+    background-color: #252525;
+    transition: 0.4s;
+}
+  
+.table tbody tr:hover{ /* tabela cada row efeito hover */
+    background-color: #09ffeb70;
+    transition: 0.4s;
+}
+
+.table tbody tr th{ /* tabela texto coluna da esquerda */
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    color: white;
+}
+
+.table tbody tr td{ /* tabela texto coluna da direita */
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    color: white;
+}
+ 
